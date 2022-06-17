@@ -22,6 +22,7 @@ window.onload = () => {
         title.value = movie.data.title;
         rating.value = movie.data.rating;
         awards.value = movie.data.awards;
+        release_date.value = movie.data.release_date.split("T")[0];
         length.value = movie.data.length;
       })
       .catch((err) => console.log(err));
